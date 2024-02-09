@@ -15,13 +15,12 @@ export type heroList = {
   heroes: hero[];
 };
 
+export type selectionOption = {
+  label: string;
+  value: string;
+  selected: boolean;
+};
+
 export type selectionOptions = {
-  tank: boolean;
-  dps: boolean;
-  healer: boolean;
-  notTank: boolean;
-  notDps: boolean;
-  notHealer: boolean;
-  any: boolean;
-  empty: boolean;
+  selectionOptions: selectionOption[];
 };
