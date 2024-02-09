@@ -1,7 +1,7 @@
 // Input all types below
 
 export type hero = {
-  role: string;
+  name: string;
   armour: number;
   damage: number;
   healing: number;
@@ -11,6 +11,17 @@ export type hero = {
 };
 
 export type heroList = {
-  class: string;
+  role: string;
   heroes: hero[];
+};
+
+export type selectionOptions = {
+  tank: boolean;
+  dps: boolean;
+  healer: boolean;
+  notTank: boolean;
+  notDps: boolean;
+  notHealer: boolean;
+  any: boolean;
+  empty: boolean;
 };
