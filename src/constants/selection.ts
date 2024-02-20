@@ -1,6 +1,12 @@
-import { selectionOptions } from "../types/types";
+import { selectionOption, selectionOptions } from "../types/types";
 
-export const defaultSelection: selectionOptions = {
+export const DefaultSelectionState: selectionOption = {
+  label: "-",
+  value: "-",
+  selected: false,
+};
+
+export const RoleSelection: selectionOptions = {
   selectionOptions: [
     { label: "Tank", value: "tank", selected: false },
     { label: "DPS", value: "dps", selected: false },
