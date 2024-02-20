@@ -1,8 +1,12 @@
 # Board Heroes
 
-## List of contents
+---
 
-## Available Scripts
+### List of contents
+
+- ***
+
+## Project Overview
 
 In the project directory, you can run:
 
