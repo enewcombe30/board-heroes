@@ -11,9 +11,9 @@ export default function HeroSelector() {
   );
 
   const random = () => [
-    Math.floor(notTank.selectionPool[0].heroes.length * Math.random()) | 0,
+    Math.floor(tankPool.selectionPool[0].heroes.length * Math.random()) | 0,
   ];
-  console.log(notTank.selectionPool[0].heroes);
+  console.log(tankPool.selectionPool[0].heroes);
   console.log(random);
   return (
     <div className="flex-none space-y-[3rem]">
