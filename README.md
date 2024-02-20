@@ -1,10 +1,8 @@
 # Board Heroes
 
----
-
 ### List of contents
 
-- ***
+-
 
 ## Project Overview
 
