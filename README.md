@@ -16,13 +16,13 @@ This site is to be used by a group of board game developers to generate random t
 
 #### Initial thoughts
 
-For this task I'm building a site utilizing purely frontend technologies to keep the project light-weight. As the main focus for this project is the data itself so the UI will be fairly limited.
+For this task, the site is built utilizing purely frontend technologies, keeping the project light-weight. As the main focus for this project is the data itself the UI will be fairly limited.
 
 #### Technologies used
 
 For this task I will be using the following technologies:
 
-- TypeScript -
+- TypeScript
 - TailwindCSS
 - React
 
