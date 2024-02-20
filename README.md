@@ -2,10 +2,6 @@
 
 #### Original email brief available in Brief.md
 
-### List of contents
-
--
-
 ## Project Overview
 
 ### Background
