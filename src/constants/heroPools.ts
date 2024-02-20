@@ -1,5 +1,8 @@
-import { heroPool } from "../types/types";
+import { hero, heroList, heroPool } from "../types/types";
 import { tankList, healerList, dpsList } from "./heroes";
+
+// Combine arrays with spread to give full selection
+// const notTankList: heroList = [heroes: [...healerList, ...dpsList]]
 
 export const tankPool: heroPool = {
   value: "tank",
@@ -18,22 +21,23 @@ export const dpsPool: heroPool = {
 
 export const notTank: heroPool = {
   value: "!tank",
-  selectionPool: [healerList, dpsList],
+  // use notTankList in section below
+  selectionPool: [],
 };
 
 export const notHealer: heroPool = {
   value: "!healer",
-  selectionPool: [tankList, dpsList],
+  selectionPool: [{ ...tankList, ...dpsList }],
 };
 
 export const notDps: heroPool = {
   value: "!dps",
-  selectionPool: [tankList, healerList],
+  selectionPool: [{ ...tankList, ...healerList }],
 };
 
 export const anyHero: heroPool = {
   value: "all",
-  selectionPool: [tankList, healerList, dpsList],
+  selectionPool: [{ ...tankList, ...healerList, ...dpsList }],
 };
 
 export const noHero: heroPool = {

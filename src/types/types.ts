@@ -2,6 +2,7 @@
 
 export type hero = {
   name: string;
+  role: string;
   armour: number;
   damage: number;
   healing: number;
@@ -11,7 +12,6 @@ export type hero = {
 };
 
 export type heroList = {
-  role: string;
   heroes: hero[];
 };
 
