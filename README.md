@@ -1,48 +1,35 @@
 # Board Heroes
 
+#### Original email brief available in Brief.md
+
 ### List of contents
 
 -
 
 ## Project Overview
 
-In the project directory, you can run:
+### Background
 
-### `npm start`
+This site is to be used by a group of board game developers to generate random teams of "Heroes" to be used as example data deciding difficulty levels, making sure the game difficulty isn't to high but maintaining a challenge, ensuring the games playability.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Tackling the task
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### Initial thoughts
 
-### `npm test`
+For this task I'm building a site utilizing purely frontend technologies to keep the project light-weight. As the main focus for this project is the data itself so the UI will be fairly limited.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Technologies used
 
-### `npm run build`
+For this task I will be using the following technologies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- TypeScript -
+- TailwindCSS
+- React
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Plan of action
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I will breakdown this task into the following sections
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Build "Database" of heroes - lists of heroes to be hardcoded in a constants file
+- Build Frontend - using basic UI to display multiple dropdown menus with preference selections, fully random checkbox and CTA buttons
+- Build randomising functionality - enabling the user to filter hero types by Class, Role and Grade
