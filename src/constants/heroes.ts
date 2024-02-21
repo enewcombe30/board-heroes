@@ -1,5 +1,20 @@
 // Input all hero information below. Maube use ChatGPT?
-import { heroList } from "../types/types";
+import { heroList, hero } from "../types/types";
+
+export const defaultHero: hero = {
+  name: "",
+  role: "",
+  armour: 0,
+  damage: 0,
+  healing: 0,
+  health: 0,
+  points: 0,
+  grade: "",
+};
+
+export const defaultList: heroList = {
+  heroes: [defaultHero],
+};
 
 export const tankList: heroList = {
   heroes: [

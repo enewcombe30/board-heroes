@@ -17,7 +17,11 @@ export type heroList = {
 
 export type heroPool = {
   value: string;
-  selectionPool: heroList[];
+  selectionPool: heroList;
+};
+
+export type heroPools = {
+  heroPools: heroPool[];
 };
 
 export type selectionOption = {
