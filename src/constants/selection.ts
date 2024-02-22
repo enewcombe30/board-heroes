@@ -2,7 +2,7 @@ import { selectionOption, selectionOptions } from "../types/types";
 
 export const DefaultSelectionState: selectionOption = {
   label: "-",
-  value: "-",
+  value: "",
   selected: false,
 };
 
@@ -15,6 +15,6 @@ export const RoleSelection: selectionOptions = {
     { label: "Not DPS", value: "!dps", selected: false },
     { label: "Not healer", value: "!healer", selected: false },
     { label: "Any", value: "all", selected: false },
-    { label: "Empty", value: "", selected: true },
+    { label: "Empty", value: "", selected: false },
   ],
 };

@@ -1,10 +1,10 @@
-import { hero, heroList, heroPool, heroPools } from "../types/types";
+import { heroPool, heroPools } from "../types/types";
 import { tankList, healerList, dpsList } from "./heroes";
 
-const notTankList = healerList.heroes.concat(dpsList.heroes);
-const notHealerList = tankList.heroes.concat(dpsList.heroes);
-const notDpsList = tankList.heroes.concat(healerList.heroes);
-const allHeroes = notDpsList.concat(tankList.heroes);
+const notTankList = [...healerList.heroes, ...dpsList.heroes];
+const notHealerList = [...tankList.heroes, ...dpsList.heroes];
+const notDpsList = [...tankList.heroes, ...healerList.heroes];
+const allHeroes = [...tankList.heroes, ...healerList.heroes, ...dpsList.heroes];
 
 const tankPool: heroPool = {
   value: "tank",

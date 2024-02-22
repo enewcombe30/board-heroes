@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { RoleSelection, DefaultSelectionState } from "../constants/selection";
-import { hero, selectionOption } from "../types/types";
+import { RoleSelection } from "../constants/selection";
+import { selectionOption } from "../types/types";
 
 interface props {
   selection: selectionOption;
