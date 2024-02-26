@@ -2,8 +2,8 @@
 import { heroList, hero } from "../types/types";
 
 export const defaultHero: hero = {
-  name: "",
-  role: "",
+  name: "default hero",
+  role: "default",
   armour: 0,
   damage: 0,
   healing: 0,

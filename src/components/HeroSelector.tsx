@@ -14,11 +14,14 @@ export default function HeroSelector({ setPartyMember }: props) {
   const [selection, setSelection] = useState<selectionOption>(
     DefaultSelectionState
   );
+
   const [selectedHero, setSelectedHero] = useState<hero>(defaultHero);
 
   useEffect(() => {
     filterPools();
     selectedPools && setSelectedHero(getRandomHero(selectedPools));
+    // Add function here to pass selected hero to party list with spread operator
+    // Ensure selection/reroll replaces current hero
   }, [selection]);
 
   const filterPools = () => {
