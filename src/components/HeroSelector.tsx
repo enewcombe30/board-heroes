@@ -8,12 +8,22 @@ import HeroData from "./HeroData";
 
 interface props {
   setPartyMember: (setSelectedHero: hero) => void;
+  showHeroes: boolean;
+  setSelection: (selection: selectionOption) => void;
+  selection: selectionOption;
+  error: boolean;
 }
 
-export default function HeroSelector({ setPartyMember }: props) {
-  const [selection, setSelection] = useState<selectionOption>(
-    DefaultSelectionState
-  );
+export default function HeroSelector({
+  setPartyMember,
+  showHeroes,
+  setSelection,
+  selection,
+  error,
+}: props) {
+  // const [selection, setSelection] = useState<selectionOption>(
+  //   DefaultSelectionState
+  // );
 
   const [selectedHero, setSelectedHero] = useState<hero>(defaultHero);
 
@@ -53,9 +63,10 @@ export default function HeroSelector({ setPartyMember }: props) {
           <SelectionDropdown
             selection={selection}
             setSelection={setSelection}
+            error={error}
           />
         </div>
-        {selectedHero && selectedHero.role !== "" && (
+        {selectedHero && selectedHero.role !== "" && showHeroes && (
           <HeroData selectedHero={selectedHero} reRoll={reRoll} />
         )}
       </div>

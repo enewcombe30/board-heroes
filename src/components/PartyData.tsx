@@ -19,8 +19,9 @@ export default function PartyData({ selectedHeroes }: props) {
 
   return (
     <>
-      <div className="w-[10rem] h-fit border-[#98b8e3] border-2 rounded-lg bg-white">
-        <ul className="pl-4 pt-4 pb-4">
+      <div className="w-[10rem] h-fit border-[#98b8e3] border-2 rounded-lg bg-white p-4">
+        <span className="text-xl">Party stats</span>
+        <ul className="pb-4">
           <li className="pb-0.5">
             Armor:{" "}
             <span className="text-[#41644e]">{totalAttributes.armour}</span>

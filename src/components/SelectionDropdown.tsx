@@ -5,9 +5,14 @@ import { selectionOption } from "../types/types";
 interface props {
   selection: selectionOption;
   setSelection: (selection: selectionOption) => void;
+  error: boolean;
 }
 
-export default function SelectionDropdown({ selection, setSelection }: props) {
+export default function SelectionDropdown({
+  selection,
+  setSelection,
+  error,
+}: props) {
   const [open, setOpen] = useState<boolean>(false);
 
   function renderMenu() {
@@ -15,7 +20,7 @@ export default function SelectionDropdown({ selection, setSelection }: props) {
       return (
         <li
           key={index}
-          className={`h-fit p-2 ${item.selected === true && "bg-gray"}`}
+          // className={`h-fit p-2 ${item.selected === true && "bg-gray"}`}
           onClick={() => setSelection(item)}
         >
           {item.label}
@@ -26,7 +31,11 @@ export default function SelectionDropdown({ selection, setSelection }: props) {
   }
   return (
     <div
-      className="w-[10rem] h-[4rem] border-[#98b8e3] border-2 rounded-lg bg-white cursor-pointer"
+      className={`w-[10rem] h-[4rem] ${
+        error && !open && selection.value === ""
+          ? "border-[#e26260] bg-[#ffe1e1]"
+          : "border-[#98b8e3] bg-white"
+      }  border-2 rounded-lg  cursor-pointer`}
       onClick={() => setOpen(!open)}
     >
       <div className="mx-auto pt-[1.1rem] w-fit h-[1rem]">
