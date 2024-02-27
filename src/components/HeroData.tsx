@@ -20,19 +20,19 @@ export default function HeroData({ selectedHero, reRoll }: props) {
             Armor: <span className="text-[#41644e]">{selectedHero.armour}</span>
           </li>
           <li className="pb-0.5">
-            Damage:{" "}
+            Damage:
             <span className="text-[#41644e]">{selectedHero.damage}</span>
           </li>
           <li className="pb-0.5">
-            Healing:{" "}
+            Healing:
             <span className="text-[#41644e]">{selectedHero.healing}</span>
           </li>
           <li className="pb-0.5">
-            Health:{" "}
+            Health:
             <span className="text-[#41644e]">{selectedHero.health}</span>
           </li>
           <li className="pb-0.5">
-            Points:{" "}
+            Points:
             <span className="text-[#41644e]">{selectedHero.points}</span>
           </li>
           {selectedHero.grade && (

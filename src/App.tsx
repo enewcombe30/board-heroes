@@ -67,7 +67,7 @@ function App() {
   };
 
   useEffect(() => {
-    !showHeroes && fullSelection && handleGenerate();
+    fullSelection && handleGenerate();
   }, [hero1, hero2, hero3, hero4, hero5]);
 
   return (
@@ -110,23 +110,19 @@ function App() {
           error={error}
         />
         <div className="">
-          <div className="space-y-[4rem] w-[10rem] h-[4rem] ml-[2rem] border-[#41644e] border-2 rounded-full bg-green-200 cursor-pointer text-[#41644e]">
-            <div
-              className="mx-auto pt-[1.1rem] w-fit h-[1rem]"
-              onClick={handleGenerate}
-            >
-              Generate
-            </div>
+          <div
+            className="space-y-[4rem] w-[10rem] h-[4rem] ml-[2rem] border-[#41644e] border-2 rounded-full bg-green-200 cursor-pointer text-[#41644e]"
+            onClick={handleGenerate}
+          >
+            <div className="mx-auto pt-[1.1rem] w-fit h-[1rem]">Generate</div>
             {showHeroes && fullSelection && (
               <PartyData selectedHeroes={partyList.heroes} />
             )}
-            <div className="w-[10rem] h-[4rem] border-[#644141] border-2 rounded-full bg-red-200 cursor-pointer text-[#160f10]">
-              <div
-                className="mx-auto pt-[1.1rem] w-fit h-[1rem]"
-                onClick={resetHeroes}
-              >
-                Reset
-              </div>
+            <div
+              className="w-[10rem] h-[4rem] border-[#644141] border-2 rounded-full bg-red-200 cursor-pointer text-[#160f10]"
+              onClick={resetHeroes}
+            >
+              <div className="mx-auto pt-[1.1rem] w-fit h-[1rem]">Reset</div>
             </div>
           </div>
         </div>

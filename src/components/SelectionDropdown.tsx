@@ -32,7 +32,7 @@ export default function SelectionDropdown({
   return (
     <div
       className={`w-[10rem] h-[4rem] ${
-        error && !open && selection.value === ""
+        error === true && !open && selection.value === ""
           ? "border-[#e26260] bg-[#ffe1e1]"
           : "border-[#98b8e3] bg-white"
       }  border-2 rounded-lg  cursor-pointer`}
