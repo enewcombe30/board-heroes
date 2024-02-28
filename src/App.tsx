@@ -56,17 +56,18 @@ function App() {
   };
 
   const resetHeroes = () => {
+    setShowHeroes(false);
     setSelection1(DefaultSelectionState);
     setSelection2(DefaultSelectionState);
     setSelection3(DefaultSelectionState);
     setSelection4(DefaultSelectionState);
     setSelection5(DefaultSelectionState);
     setPartyList({ heroes: [] });
-    setShowHeroes(false);
     setError(false);
   };
 
   useEffect(() => {
+    setShowHeroes(false);
     fullSelection && handleGenerate();
   }, [hero1, hero2, hero3, hero4, hero5]);
 
